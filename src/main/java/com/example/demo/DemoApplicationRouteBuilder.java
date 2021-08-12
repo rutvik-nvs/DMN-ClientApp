@@ -50,7 +50,6 @@ public class DemoApplicationRouteBuilder extends RouteBuilder {
                     .when().jsonpath("$.[?(@.decision-name == 'Decision')]")
                         .split().jsonpath(".result")
                         .log("${body}")
-                .to("file:output/response.txt")
                 .to("mock:response");
 //                .otherwise()
 //                        .setHeader("h_isSuspended").jsonpath("$.result")
