@@ -1,14 +1,9 @@
 {
-    Input: [
-        <#-- list ${processedArray.inputArray} as inputItem}>
-        {
-            "DOM": "${inputItem.DOM}",
-            "hasLicense?": ${inputItem.hasLicense?},
-            "isLicenseValid?": ${inputItem.isLicenseValid?}
-        },
-        </#list -->
-
-        <#assign Array = { "inputArray": "1" } >
-        ${Array.inputArray}
-    ]
-}
+        "Input": [<#assign List = body?eval><#list List as listItem>
+             {
+                "DOB": "${listItem.DOB}",
+                "hasLicense?": ${listItem.hasLicense?c},
+                "isLicenseValid?": ${listItem.isLicenseValid?c}
+             }<#if listItem?is_last><#else>,</#if></#list>
+        ]
+    }
