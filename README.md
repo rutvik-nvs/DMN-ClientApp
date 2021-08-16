@@ -1,7 +1,7 @@
 ## Sample KIE Server Client Application
 - This repository contains the source code for a sample Maven Java Project with Spring Boot which allows the application to connect to the KIE-server running on an OCP Cluster and evaluation on the data can be performed.
 - It can be programmed to act as a REST API using Spring Boot Servlet or as a client Java application.
-- Use Cases:<br />
+- Use Cases:<br /><br /><br />
 ![](https://raw.githubusercontent.com/rutvik-nvs/DMN-ClientApp/master/docs/Apache%20Camel.png)<br />
 ## Prerequisites
 - KIE-server running on a local machine or an OCP Cluster
