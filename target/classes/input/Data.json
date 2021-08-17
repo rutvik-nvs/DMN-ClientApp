@@ -1,0 +1,22 @@
+[
+  {
+    "DOB": "01/01/1970",
+    "hasLicense": true,
+    "isLicenseValid": true
+  },
+  {
+    "DOB": "01/01/1970",
+    "hasLicense": false,
+    "isLicenseValid": true
+  },
+  {
+    "DOB": "01/01/1970",
+    "hasLicense": true,
+    "isLicenseValid": false
+  },
+  {
+    "DOB": "01/01/1970",
+    "hasLicense": false,
+    "isLicenseValid": false
+  }
+]
